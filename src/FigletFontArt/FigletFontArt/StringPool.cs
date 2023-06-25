@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FigletFontArt;
+﻿namespace FigletFontArt;
 
 /// <summary>
 /// An object pool for merging references to identical strings.

@@ -1,9 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <SignAssembly>True</SignAssembly>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>FigletFontArt a ASCII text art generation</Title>
+    <Description>The FigletFontArt is a ASCII text art generation for .NET console application</Description>
+    <PackageProjectUrl>https://github.com/VikashChauhan51/figlet-ascii-art</PackageProjectUrl>
+    <Authors>VikashChauhan51</Authors>
+    <Copyright>Copyright © VikashChauhan51, 2023</Copyright>
+    <RepositoryUrl>https://github.com/VikashChauhan51/figlet-ascii-art</RepositoryUrl>
+    <PackageTags>command-line;command-line-art;ascii-art;ascii-font-art;console;console-art;console-output;console-ascii-art-generator;ascii-art-generator</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <AssemblyOriginatorKeyFile>..\FigletFontArt.snk</AssemblyOriginatorKeyFile>
+    <RepositoryType>git</RepositoryType>
+    <ProjectGuid>{75519BBE-A7AE-4D69-B255-CB95AE266775}</ProjectGuid>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +28,13 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Fonts.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
